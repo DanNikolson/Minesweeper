@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile {
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.verification {
+    height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.profile-picture{
+    display: flex;
+}
+
+.game-center{
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 60%;
+}
+.game-left{
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+.game-right{
+    background-image: url(фон-справа.jpg);
+    background-size: cover;
+}
+
+a {
+    color: brown;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+p {
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.verification.main input {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.message {
+    border: 2px solid orange;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.logout {
+    font-size: 1rem;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.589);
+}
+
+.cell {
+    border: none;
+    background: #e2e2e2;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    user-select: none;
+    font-family: Tahoma, sans-serif;
+    box-shadow: inset 0 2px 0 0 #fcfcfc, inset 2px 0 0 0 #fcfcfc, inset 0 -2px 0 0 #c9c9c9, inset -2px 0 0 0 #c9c9c9;
+}
+
+table {
+    border: 1px solid;
+    border-spacing: 0;
+    text-align: center;
+}
+
+td {
+    width: 18px;
+    height: 18px;
+    border: 1px solid gray;
+}
+
+.minesweeper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mine{
+    background-image: url(бесконтурная_мина.png);
+}
+.victory{
+    background-image: url(win.png);
+    width: 18px;
+    height: 18px;
+
+}
